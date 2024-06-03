@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Симулятор дауна</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      width: 300px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+  <a class="link" href="index.html">Главная</a>
+  <a class="link" href="simulator_button.html">Симулятор кнопки</a>
+</div>
+<h1>Симулятор дауна</h1>
+<img src="1512706935395.jpg" alt="Смешной человек" id="funnyImage">
+<audio id="funnySound" src="funny_sound.mp3"></audio>
+<script>
+  document.getElementById('funnyImage').onclick = function() {
+    document.getElementById('funnySound').play();
+  };
+</script>
+</body>
+</html>
