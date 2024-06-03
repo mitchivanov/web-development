@@ -7,16 +7,9 @@ html {
     color: white;
     scroll-behavior: smooth;
     font-family: "Inter", sans-serif;
-    font-size: 16px;
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
 
 header {
-    width: 100%;
     display: flex;
     margin-block: 3rem;
     justify-content: center;
@@ -25,16 +18,11 @@ header {
 header ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 30px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-
     margin-inline: auto;
-}
-
-header .max_width {
-    width: 100%;
-    margin: 0 auto;
+    padding-inline-start: 0px;
 }
 
 header a {
@@ -52,10 +40,9 @@ header a:hover {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-image: url("images/Capture\ d’écran\ 2023-05-25\ à\ 17.14\ 1.png");
+    background-image: url("../web-development/images/Capture\ d’écran\ 2023-05-25\ à\ 17.14\ 1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
 }
 
 .hello {
@@ -70,7 +57,7 @@ header a:hover {
     --interval: 1s;
     display: block;
     text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
-        0 0 40px var(--color3), 0 0 80px var(--color4);
+    0 0 40px var(--color3), 0 0 80px var(--color4);
     will-change: filter, color;
     filter: saturate(60%);
     animation: flicker steps(100) var(--interval) 1s infinite;
@@ -101,6 +88,39 @@ header a:hover {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+}
+
+.work{
+    height: 100%;
+    font-size: 15px;
+}
+
+.swiper{
+    width: 1000px;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img{
+    width: 58%;
+    object-fit: cover;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: 140px !important;
+    left: auto;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: 140px !important;
+    right: auto;
 }
 
 .outer {
@@ -143,6 +163,8 @@ header a:hover {
     transition: opacity 0.3s ease-in-out;
 }
 
+
+
 .outer:hover::after {
     opacity: 1;
 }
@@ -150,7 +172,7 @@ header a:hover {
 footer {
     max-width: 1450px;
     margin-inline: auto;
-    justify-content: end;
+    justify-content: center;
 }
 
 .footer_nav {
@@ -165,7 +187,10 @@ footer {
     justify-content: center;
 }
 
-
+.max_width {
+    max-width: 1450px;
+    margin-inline: auto;
+}
 
 .ul_svg img {
     display: flex;
@@ -173,6 +198,10 @@ footer {
     gap: 15%;
     width: 40px;
     height: 40px;
+}
+
+img[src="images/github-mark.svg"] path {
+    fill: black;
 }
 
 @keyframes flicker {
